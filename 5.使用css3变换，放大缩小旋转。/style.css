@@ -1,0 +1,16 @@
+.rhombus{
+    height: 50px;
+    width: 50px;
+    margin: 50px auto;
+    background-color: rgb(233, 129, 55); /*菱形*/
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+ }
+ .rhombiod{
+    height: 50px;
+    width: 90px;
+    margin: 30px auto;
+    background-color: rgb(25, 196, 196); /*菱形*/
+    -webkit-transform: skewX(30deg);
+    transform: skewX(30deg);/*x轴不动，y轴逆时针旋转一定角度 x轴向右边y向下边*/
+ }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3选择器</title>
+    <style type="text/css">
+        .title{
+            color: black;/*类选择器*/
+        }
+        #name{
+            color: rgb(12, 236, 113);/*id选择器*/
+        }
+        /*css伪类 CSS 伪类用于向某些选择器添加特殊的效果，
+        链接的不同状态都可以不同的方式显示，
+        这些状态包括：活动状态，已被访问状态，未被访问状态，和鼠标悬停状态,点击选择状态*/
+        a:link{
+            color: coral; /* 未访问的链接*/
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            color: blue;
+        }
+        a:active{
+            color: red;
+        }
+        input:enabled{
+            background-color: green;/*元素选择器*/
+
+        }
+        input:disabled{
+            background-color: red;
+        }
+
+        p,h3{
+            color: royalblue;/*选择器分组
+            */
+        }
+        div h3{
+            color: salmon;/*选择 <div> 元素内部的所有h3元素。*/
+        }
+       
+    </style>
+</head>
+<body>
+    <h1 class="title">文章标题</h1>
+    <h2 id="name">我今天要学习id选择器</h2>
+    <a href="https://www.baidu.com/">链接地址（用于是否访问的演示）</a>
+    <br/>
+    <input type="text"><br/>
+    <input type="text" disabled>
+    <div>我是div标签
+        <h3>我是div标签下的h3标签</h3>
+    </div>
+    <h3>我是h3标签</h3>
+</body>
+</html>

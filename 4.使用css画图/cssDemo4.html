@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>使用css画图</title>
+    <style type="text/css">
+      .dialog {
+        top: 50px;
+        height: 20px;
+        line-height: 20px;
+        padding: 10px;
+        width: 200px;
+        border-radius: 5px;
+        background-color: rgb(50, 168, 119);
+        position: relative;
+      }
+      .dialog::before {
+        content: "";
+        height: 0px;
+        width: 0px;
+        border: 10px solid;
+        border-color: transparent rgb(50, 168, 119) transparent transparent;
+        position: absolute;
+        left:-20px;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dialog">我是一个聊天框！</div>
+  </body>
+</html>

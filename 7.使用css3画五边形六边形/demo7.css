@@ -1,0 +1,46 @@
+.pentagon {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 55px solid gray;
+  margin: 100px auto;
+}
+.pentagon::before {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 55px solid red;
+  transform: translate(-30px, -110px);
+  -webkit-transform: translate(-30px, -110px);
+  -moz-transform: translate(-30px, -110px);
+  -ms-transform: translate(-30px, -110px);
+  -o-transform: translate(-30px, -110px);
+}
+.hexagon {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 55px solid red;
+  margin: 100px auto;
+}
+.hexagon::before {
+  content: "";
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 55px solid gray;
+  transform: translate(-30px, -170px);
+  -webkit-transform: translate(-30px, -170px);
+  -moz-transform: translate(-30px, -170px);
+  -ms-transform: translate(-30px, -170px);
+  -o-transform: translate(-30px, -170px);
+}
